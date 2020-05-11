@@ -86,7 +86,7 @@ const kiitosTeksti = () => {
 // Smoothscroll, jonka pitäisi toimia kaikilla browsereilla.
 const smoothScroll = (target, duration) => {
     let target2 = document.querySelector(target)
-    var targetPos = target2.getBoundingClientRect().top + window.pageYOffset - 80;
+    let targetPos = target2.getBoundingClientRect().top + window.pageYOffset - 80;
     let startPos = window.pageYOffset
     let distance = targetPos - startPos
     let startTime = null
@@ -112,6 +112,11 @@ const smoothScroll = (target, duration) => {
 let aloitussivu = document.querySelector("#ToAloitussivu")
 aloitussivu.addEventListener("click", () => {
     smoothScroll("#Aloitussivu", 1000)
+})
+
+let kenelle = document.querySelector("#ToKenelle")
+kenelle.addEventListener("click", () => {
+    smoothScroll("#Kenelle", 1000)
 })
 
 let artikkelit = document.querySelector("#ToArtikkelit")

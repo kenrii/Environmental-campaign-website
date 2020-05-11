@@ -103,7 +103,6 @@ body {
     background-color: #F5FFF8;
     padding-top: 80px;
     position: relative;
-    height: 55em; 
 }
 
 #Aloitussivu h1 {
@@ -121,17 +120,9 @@ body {
 }
 
 .outer-container {
+    padding: 2em 0 0 0;
     display: flex;
-    flex-direction: column;
-    padding: 1em;
-}
-
-.inner-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .video-wrapper {
@@ -143,6 +134,7 @@ body {
   width: 100%;
   padding-bottom: 56.25%; 
   height: 0;
+  align-items: center;
 }
 
 .video iframe{
@@ -154,15 +146,15 @@ body {
   }
 
 .videoteksti {
-    width: 50%;
-    text-align: left;
+    text-align: center;
 }
 
-.videoteksti2 {
-    width: 100%;
-    text-align: left;
-    justify-content: center;
-    vertical-align: center;
+/** Mikä on **/
+
+#Mikaon {
+    background-color: #E9FFEF;
+    text-align: center;
+    position: relative;
 }
 
 .esittelyteksti {
@@ -200,6 +192,54 @@ body {
     font-weight: bold;
     color: #E9FFEF;
     font-size: 0.9em;
+}
+
+/** Kenelle **/
+
+#Kenelle {
+    background-color: #F5FFF8;
+    position: relative;
+}
+
+.kenelle-teksti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.kenelle-teksti button {
+    padding: 0.8em;
+    text-align: center;
+    color:#FFF;
+    background-color: #5D8A6A;
+    font-size: 0.8em;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.8em;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+}
+
+.tekstijakuva {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tekstijakuva p {
+    text-align: left;
+    width: 95%;
+    font-size: 0.8em;
+}
+
+.responsive {
+    max-width: 290px;
+    height: auto;
 }
 
 /** Artikkeleita **/
@@ -247,6 +287,7 @@ body {
     font-weight: bold;
     margin-bottom: 1em;
     margin-top: 0.8em;
+    border-radius: 10px;
 }
 
 #Vaikuta h2{
@@ -274,13 +315,13 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
 }
 
 .henkilo img {
   overflow: hidden;
-  max-width: 100px;
-  max-height: 100px;
+  width: 5em;
+  height: 5em;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -512,9 +553,31 @@ body {
     width: 300px;
 }
 
+@media screen and (min-width: 2300px) {
+    /** Aloitussivu **/
+
+    #Aloitussivu {
+        height: 35em; 
+    }
+
+    /** Kenelle **/ 
+
+    .responsive {
+        max-width: 600px;
+        height: auto;
+    }
+
+}
+
 @media screen and (max-width: 1500px) {
 
-    /**Kulmagrafiikat**/
+    /** Aloitussivu **/
+
+    .video-wrapper {
+        width: 50%;
+    }
+
+    /** Kulmagrafiikat **/
 
     .topleft img {
         width: 250px;
@@ -530,6 +593,30 @@ body {
 
     .bottomright img {
         width: 250px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .esittelyteksti p {
+        font-size: 1.05em;
+    }
+
+    /** Kenelle **/ 
+
+    .responsive {
+        max-width: 500px;
+        height: auto;
+    }
+
+    .kenelle-teksti p {
+        font-size: 0.85em;
+    }
+
+    /** Tarinat **/ 
+
+    .henkilo-teksti p {
+        font-size: 0.9em;
     }
 }
 
@@ -568,12 +655,12 @@ body {
     }
 
     .nav-links ul li {
-        padding-bottom: 1.5em;
+        padding-bottom: 1em;
         opacity: 0;
     }
 
     .nav-links li a {
-        font-size: 1.8em;
+        font-size: 1.65em;
         color: #FFFFFF;
     }
 
@@ -621,9 +708,8 @@ body {
 
     /** Aloitussivu **/
 
-
     #Aloitussivu {
-        height: 57em; 
+        height: 37em; 
     }
 
     .video-wrapper {
@@ -633,11 +719,6 @@ body {
     .videoteksti {
         width: 100%;
         text-align: center;
-    }
-
-    .videoteksti2 {
-        text-align: center;
-        width: 100%;
     }
 
     .esittelyteksti p {
@@ -656,6 +737,28 @@ body {
         font-size: 0.7em;
     }
 
+    /** Kenelle **/ 
+    .tekstijakuva {
+        flex-direction: column;
+    }
+
+    .tekstijakuva p {
+        font-size: 0.7em;
+    }
+
+    .responsive {
+        max-width: 210px;
+        height: auto;
+    }
+
+    .kenelle-teksti button {
+        font-size: 0.7em;
+        padding: 0.7em;
+        margin-top: 0.7em;
+        
+    }
+
+
     /** Artikkelit **/
 
     #Artikkelit p {
@@ -670,8 +773,8 @@ body {
     }
     
     #cell-tarinoita img {
-        height: 5em;
-        width: 5em;
+        height: 6em;
+        width: 6em;
         margin-top: 5%;
         border-radius: 50%;
         padding: 1em;
@@ -736,7 +839,26 @@ body {
     
 }
 
+@media screen and (max-width: 650px) {
+    /** Aloitussivu **/
+
+    #Aloitussivu {
+        height: 35em; 
+    }
+
+    .responsive {
+        max-width: 170px;
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 550px) {
+
+    /** Aloitussivu **/
+
+    #Aloitussivu {
+        height: 33em; 
+    }
 
     /**Kulmagrafiikat**/
 
@@ -771,11 +893,19 @@ body {
         bottom: -2px;
     }
 
+    /** Kenelle **/
+
+    .responsive {
+        max-width: 150px;
+        height: auto;
+    }
+
     /** Vinkkinurkka **/
 
     #forms {
         margin: 2em 0em 2em 0em;
     }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -784,11 +914,16 @@ body {
         height: 34em;
     }
 
-    /** Alkusivu **/
-
-    #Aloitussivu {
-        height: 66em; 
+    /** Kenelle **/ 
+    .responsive {
+        max-width: 120px;
+        height: auto;
     }
+
+    .tekstijakuva p {
+        font-size: 0.6em;
+    }
+    
 
     /** Liity **/
 
