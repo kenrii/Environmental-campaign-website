@@ -1,0 +1,812 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Montserrat";
+}
+
+html {
+    font-size: calc(0.8em + 0.7vw) !important;
+}
+
+body {
+    background-color: #F5FFF8;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mobile {
+    display: none;
+}
+
+/***     NAVIGOINTI     ***/
+
+.navbar {
+    top: auto;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #F8FFFA;
+    height: 111px;
+    width: 100%;
+    position: fixed;
+    float: left;
+}
+
+#logo {
+    width: 64px;
+    height: 76px;
+    top: 10px;
+    box-sizing: content-box;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a {
+    display: block;
+    padding-left: 36px;
+    color: #000000;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.toggle-button {
+    position: absolute;
+    right: 6%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#toggle {
+    font-size: 30px;
+    color: #000000; 
+    box-sizing: content-box;
+}
+
+/***     SISÄLTÖ      ***/
+
+.section {
+    width: 100%;
+    height: 32em;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    padding: 2% 7% 7% 7%;
+    text-align: center;
+}
+
+.content h1 {
+    font-weight: lighter;
+}
+
+.content h2 {
+    font-weight: Bold;
+}
+
+/** Aloitussivu **/
+
+#Aloitussivu {
+    background-color: #F5FFF8;
+    padding-top: 80px;
+    position: relative;
+    height: 55em; 
+}
+
+#Aloitussivu h1 {
+    font-weight: bold;
+    margin: 0.33em 0
+}
+
+#Aloitussivu h2 {
+    font-weight: lighter;
+    margin: 1em 0 0 0;
+}
+
+#Aloitussivu p {
+    margin-top: 1em;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.video-wrapper {
+    width: 40%;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+
+.video iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.videoteksti {
+    width: 50%;
+    text-align: left;
+}
+
+.videoteksti2 {
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.esittelyteksti {
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em 2em 2em 2em;
+    text-align: left;
+}
+
+.esittelyteksti p {
+    font-size: 0.9em;
+}
+
+.aikaajaljella {
+    text-align: center;
+    background-color: #5D8A6A;
+    border-radius: 20px;
+    padding: 0.5em;
+    box-sizing: border-box;
+    width: 11em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+}
+
+.aikaajaljella p {
+    font-weight: bold;
+    color: #E9FFEF;
+    font-size: 0.9em;
+    margin-top: 0 !important;
+}
+
+#oilCounter {
+    font-weight: bold;
+    color: #E9FFEF;
+    font-size: 0.9em;
+}
+
+/** Artikkeleita **/
+
+#Artikkelit {
+    background-color: #E9FFEF;
+    text-align: center;
+    position: relative;
+}
+
+
+#Artikkelit p {
+    margin: 0.5em 2em;
+}
+
+#Artikkelit ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+}
+
+#Artikkelit li {
+    padding-top: 1em;
+    font-weight: bold;
+}
+
+/** Vaikuta **/
+
+#Vaikuta {
+    background-color: #F5FFF8;
+    text-align: center;
+    position: relative;
+}
+
+#Vaikuta button{
+    background-color: #5D8A6A;
+    border: none;
+    text-decoration: none;
+    padding: 1em;
+    text-align: center;
+    color:#FFF;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-top: 0.8em;
+}
+
+#Vaikuta h2{
+    font-weight: normal;
+}
+
+#vaikuta-content {
+    padding: 1em;
+}
+
+#autakampanjaa {
+    font-weight: bold;
+}
+
+/** Tarinoita **/
+
+#Tarinoita {
+    background-color: #E9FFEF;
+    position: relative;
+}
+
+
+.henkilo {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 1em;
+}
+
+.henkilo img {
+  overflow: hidden;
+  max-width: 100px;
+  max-height: 100px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.henkilo-teksti {
+    display: inline-block;
+    text-align: left;
+    width: 70%;
+}
+
+.henkilo-teksti p {
+    font-size: 0.7em;
+}
+
+/** Vinkkinurkka **/
+
+#Vinkkinurkka {
+    background-color: #F5FFF8;
+    position: relative;
+}
+
+.tofront {
+    z-index: 5;
+}
+
+#carousel-vinkki {
+    background: #EEE;
+    z-index: 5;
+}
+
+#submit {
+    height: 2.5em;
+    width: 55%;
+    z-index: 1000;
+}
+
+#button {
+    background-color: #5D8A6A;
+    border: none;
+    color:#FFF;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 30px;
+    padding: 4.5px;
+    box-sizing: content-box;
+    z-index: 5;
+}
+
+#forms {
+    margin: 3em 0em 3em 0em;
+    z-index: 5;
+    position: relative;
+}
+
+#cell-vinkki {
+  padding: 1em;
+  width: 35%;
+  height: 11rem;
+  margin-right: 1em;
+  background: #89d190;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  word-wrap: break-word;   
+  overflow-wrap: break-word;
+  word-break: break-word;
+  z-index: 5;
+}
+
+#cell-vinkki p {
+    font-size: 0.65em;
+    z-index: 5;
+}
+
+/** Liity **/
+
+#Liity {
+    background-color: #5D8A6A;
+    border-top-left-radius: 15vw;
+    position: relative;
+    height: 28em;
+}
+
+.curvebox {
+    width: 15vw;
+    height: 15vw;
+    background-color: #5D8A6A;
+    position: absolute;
+    right: 0;
+    top: -15vw;
+    z-index: 3;
+}
+
+.curved {
+    width: 30vw;
+    height: 30vw;
+    background-color: #F5FFF8;
+    position: absolute;
+    right: 0;
+    top: -30vw;
+    border-radius: 15vw;
+    z-index: 4;
+}
+
+.liitynyt {
+    display: flex;
+    justify-content: center;
+}
+
+#Liity h1 {
+    color: #F5FFF8;
+    font-weight: bold;
+    font-size: 1.6em;
+    width: 75vw;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#Liity p {
+    color: #F5FFF8;
+}
+
+.parent {
+    text-align: center;
+}
+
+#Liity ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#Liity li {
+    padding: 0.5em 0;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#Liity li a {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#Liity li img {
+    width: 1.8em;
+}
+
+#Liity p {
+    margin-left: 2em;
+}
+
+.logot {
+    margin-top: 4em;
+    padding-left: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.logot img {
+    padding-right: 5em;
+    width: 7em;
+}
+
+.jalka {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5D8A6A;
+    padding-bottom: 10px;
+}
+
+.jalka a {
+    color: #E9FFEF;
+}
+
+/**Kulmagrafiikat**/
+
+.topleft {
+    position: absolute;
+    top: -3px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.topleft img {
+    width: 300px;
+}
+
+.topright {
+    position: absolute;
+    right: 0;
+    top: -3px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.topright img {
+    width: 300px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: -3px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bottomleft img {
+    width: 300px;
+}
+
+.bottomright {
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bottomright img {
+    width: 300px;
+}
+
+@media screen and (max-width: 1500px) {
+
+    /**Kulmagrafiikat**/
+
+    .topleft img {
+        width: 250px;
+    }
+
+    .topright img {
+        width: 250px;
+    }
+
+    .bottomleft img {
+        width: 250px;
+    }
+
+    .bottomright img {
+        width: 250px;
+    }
+}
+
+
+/*-------- MOBIILI ---------*/
+
+@media screen and (max-width: 950px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .section {
+        height: 33em;
+    }
+    
+    /** Mobiili navigonti **/
+
+    .nav-links ul {
+        top: 0px;
+        position: fixed;
+        background: #5D8A6A;
+        height: 115vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        clip-path: circle(100px at 90% -50%);
+        -webkit-clip-path: circle(100px at 90% -50%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links ul li {
+        padding-bottom: 1.5em;
+        opacity: 0;
+    }
+
+    .nav-links li a {
+        font-size: 1.8em;
+        color: #FFFFFF;
+    }
+
+    .nav-links ul li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links ul li:nth-child(2) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links ul li:nth-child(3) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links ul li:nth-child(4) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links ul li:nth-child(5) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links ul li.fade {
+        opacity: 1;
+    }
+
+    .nav-links ul.active {
+        clip-path: circle(2200px at 90% -50%);
+        -webkit-clip-path: circle(2200px at 90% -50%);
+        pointer-events: all;
+    }
+
+    #logo {
+        position: fixed;
+    }
+
+    #toggle {
+        z-index: 999;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    /** Aloitussivu **/
+
+
+    #Aloitussivu {
+        height: 57em; 
+    }
+
+    .video-wrapper {
+        width: 80%;
+    }
+
+    .videoteksti {
+        width: 100%;
+        text-align: center;
+    }
+
+    .videoteksti2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .esittelyteksti p {
+        font-size: 0.7em;
+    }
+
+    .esittelyteksti {
+        padding: 0em 0.5em 0.5em 0.5em;
+    }
+
+    #oilCounter {
+        font-size: 0.7em;
+    }
+
+    .aikaajaljella p {
+        font-size: 0.7em;
+    }
+
+    /** Artikkelit **/
+
+    #Artikkelit p {
+      margin: 0.5em;
+      font-size: 0.9em;
+    }
+
+    /** Tarinoita **/
+
+    #carousel-tarinoita {
+        background: #E9FFEF;
+    }
+    
+    #cell-tarinoita img {
+        height: 5em;
+        width: 5em;
+        margin-top: 5%;
+        border-radius: 50%;
+        padding: 1em;
+    }
+    
+    #cell-tarinoita p{
+        font-size: 0.85em;
+        padding-top: 1em;
+    }
+    
+    #cell-tarinoita {
+        width: 100%;
+        height: 20em;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background: #E9FFEF;
+        border-radius: 5px;
+        justify-content: top;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /** Vinkkinurkka **/
+
+    #cell-vinkki {
+        width: 66%;
+    }
+
+    /**Kulmagrafiikat**/
+
+    .topleft img {
+        width: 200px;
+    }
+
+    .topright img {
+        width: 200px;
+    }
+
+    .bottomleft img {
+        width: 200px;
+    }
+
+    .bottomright img {
+        width: 200px;
+    }
+    
+    .topleft {
+        top: -2px;
+    }
+    
+    .topright {
+        top: -2px;
+    }
+    .bottomleft {
+        bottom: -2px;
+    }
+    
+    .bottomright {
+        bottom: -2px;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+
+    /**Kulmagrafiikat**/
+
+    .topleft img {
+        width: 150px;
+    }
+
+    .topright img {
+        width: 150px;
+    }
+
+    .bottomleft img {
+        width: 150px;
+    }
+
+    .bottomright img {
+        width: 150px;
+    }
+
+    .topleft {
+        top: -2px;
+    }
+    
+    .topright {
+        top: -2px;
+    }
+    .bottomleft {
+        bottom: -2px;
+    }
+    
+    .bottomright {
+        bottom: -2px;
+    }
+
+    /** Vinkkinurkka **/
+
+    #forms {
+        margin: 2em 0em 2em 0em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    
+    .section {
+        height: 34em;
+    }
+
+    /** Alkusivu **/
+
+    #Aloitussivu {
+        height: 66em; 
+    }
+
+    /** Liity **/
+
+    #Liity h1{
+        font-size: 1.4em;
+        padding-bottom: 0.8em;
+    }
+
+    #liity li {
+        padding: 0.6em;
+    }
+
+    #Liity li img {
+        width: 1.7em;
+    }
+
+    #Liity p {
+        margin-left: 1.5em;
+        font-size: 0.8em;
+    }
+
+}
