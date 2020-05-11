@@ -6,7 +6,7 @@ let counter = 1124
 let oilBarrels = 15090585140000
 
 
-// Kauniit fadein animaatiot kun avataan mobiilinavigointi
+// Kauniit fadein animaatiot kun avataan mobiilinavigointi. Laittaa jokaiseen listan elementtiin fade-effectin.
 toggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
     links.forEach(link => {
@@ -17,7 +17,7 @@ toggle.addEventListener("click", () => {
     })
 })
 
-// Lasketaan kuinka monta öljybarrelia on jäljellä. Loppuessa kokonaan pidetään 0:ssa ja lopetetaan setInterval
+// Lasketaan kuinka monta öljybarrelia on jäljellä. Loppuessa kokonaan pidetään 0:ssa ja lopetetaan setInterval.
 const oilCounter = () => {
     const minus = oilBarrels - 543
     if (minus > 0) {
@@ -61,7 +61,7 @@ const makeCell = (text) =>  {
     return cell
 }
 
-// Lisää yhden osallistujan 
+// Lisää yhden osallistujan vaikuta-kohdan laskuriin.
 const count = () => {
     return counter+=1
 }
@@ -74,7 +74,7 @@ const laskuri = () => {
     }
 }
 
-// Kiitetään käyttäjää kampanjaan osallistumisesta
+// Kiitetään käyttäjää kampanjaan osallistumisesta. Tapahtuu, kun käyttäjä clikkaa vaikuta kohdan laskuria.
 const kiitosTeksti = () => {
     let h2 = document.createElement("h2")
     let node = document.createTextNode("Kiitos osallistumisesta!")
@@ -109,6 +109,7 @@ const smoothScroll = (target, duration) => {
     requestAnimationFrame(animation)
 }
 
+// Laitetaan jokaiseen sivun navigoinnissa olevaan sectioniin mahdollisuus smooth scrolliin.
 let aloitussivu = document.querySelector("#ToAloitussivu")
 aloitussivu.addEventListener("click", () => {
     smoothScroll("#Aloitussivu", 1000)

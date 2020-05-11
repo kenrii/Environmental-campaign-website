@@ -636,6 +636,10 @@ body {
     .section {
         height: 33em;
     }
+
+    h1 {
+        font-size: 1.9em !important ;
+    }
     
     /** Mobiili navigonti **/
 
