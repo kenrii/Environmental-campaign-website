@@ -297,6 +297,10 @@ body {
     position: relative;
 }
 
+#Vaikuta p {
+    font-size: 1.3em;
+}
+
 #Vaikuta button{
     background-color: #5D8A6A;
     border: none;
@@ -304,7 +308,7 @@ body {
     padding: 1em;
     text-align: center;
     color:#FFF;
-    font-size: 1.2em;
+    font-size: 1.5em;
     cursor: pointer;
     font-weight: bold;
     margin-bottom: 1em;
@@ -314,6 +318,7 @@ body {
 
 #Vaikuta h2{
     font-weight: normal;
+    font-size: 1.4em;
 }
 
 #vaikuta-content {
@@ -321,6 +326,7 @@ body {
 }
 
 #autakampanjaa {
+    margin-top: 1em;
     font-weight: bold;
 }
 
@@ -428,7 +434,7 @@ body {
     background-color: #5D8A6A;
     border-top-left-radius: 15vw;
     position: relative;
-    height: 34em;
+    height: 30em;
 }
 
 .curvebox {
@@ -516,7 +522,7 @@ body {
 }
 
 .jalka {
-    padding: 1.5em;
+    padding-top: 3em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -599,6 +605,12 @@ body {
         width: 50%;
     }
 
+    /** Vaikuta **/
+
+    #Vaikuta p {
+        font-size: 1em;
+    }
+
     /** Kulmagrafiikat **/
 
     .topleft img {
@@ -669,15 +681,16 @@ body {
         top: 0px;
         position: fixed;
         background: #5D8A6A;
-        height: 115vh;
+        height: 110vh;
         width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: left;
-        clip-path: circle(100px at 90% -50%);
-        -webkit-clip-path: circle(100px at 90% -50%);
+        clip-path: circle(0 at 90% -50%);
+        -webkit-clip-path: circle(0 at 90% -50%);
         transition: all 1s ease-out;
         pointer-events: none;
+        flex-wrap: wrap;
     }
 
     .nav-links ul li {
@@ -686,7 +699,7 @@ body {
     }
 
     .nav-links li a {
-        font-size: 2rem;
+        font-size: 1.4em;
         color: #FFFFFF;
     }
 
@@ -719,8 +732,8 @@ body {
     }
 
     .nav-links ul.active {
-        clip-path: circle(200vh at 90% -50%);
-        -webkit-clip-path: circle(200vh at 90% -50%);
+        clip-path: circle(calc(150vh + 150vw) at 90% -50%);
+        -webkit-clip-path: circle(calc(150vh + 150vw) at 90% -50%);
         pointer-events: all;
     }
 
@@ -796,6 +809,16 @@ body {
       font-size: 0.9em;
     }
 
+    /** Vaikuta **/
+
+    #Vaikuta h2{
+        font-size: 1em;
+    }
+
+    #Vaikuta button{
+        font-size: 1.2em;
+    }
+
     /** Tarinoita **/
 
     #carousel-tarinoita {
@@ -834,6 +857,16 @@ body {
         width: 66%;
     }
 
+    /** Liity **/
+
+    #Liity {
+        height: 35em;
+    }
+
+    .jalka {
+        padding-top: 1.5em;
+    }
+
     /**Kulmagrafiikat**/
 
     .topleft img {
@@ -867,6 +900,14 @@ body {
         bottom: -2px;
     }
     
+}
+
+@media screen and (max-width: 700px) {
+    /** Liity **/
+
+    #Liity {
+        height: 38em; 
+    }
 }
 
 @media screen and (max-width: 650px) {

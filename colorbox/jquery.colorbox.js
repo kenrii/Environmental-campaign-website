@@ -1134,4 +1134,11 @@
 		  });
 		
 		})(jQuery, this, this.document);
+
+		$(document).on('cbox_open',function(){
+			$(document.body).css('position','fixed');
+		  }).on('cbox_closed',function(){
+			$(document.body).css('position','');
+		  });
+		  
 }(jQuery, document, window));

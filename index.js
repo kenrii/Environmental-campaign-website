@@ -17,7 +17,7 @@ toggle.addEventListener("click", () => {
     })
 })
 
-// Lasketaan kuinka monta öljybarrelia on jäljellä. Loppuessa kokonaan pidetään 0:ssa ja lopetetaan setInterval.
+// Lasketaan kuinka monta öljybarrelia on jäljellä. Loppuessa kokonaan pidetään 0:ssa ja lopetetaan setIntervali.
 const oilCounter = () => {
     const minus = oilBarrels - 543
     if (minus > 0) {
@@ -145,7 +145,7 @@ liity.addEventListener("click", () => {
     smoothScroll("#Liity", 1000)
 })
 
-// Colorbox UKK esiin saamiseen
+// Colorbox UKK esiin saamiseen jquerylla.
 $(document).ready(function(){
     //Examples of how to assign the Colorbox event to elements
     $(".inline").colorbox({inline:true, width:"80%", height:"80%"});
