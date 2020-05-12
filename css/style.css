@@ -516,7 +516,7 @@ body {
 }
 
 .jalka {
-    padding-top: 1.5em;
+    padding: 1.5em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -686,7 +686,7 @@ body {
     }
 
     .nav-links li a {
-        font-size: 1.65em;
+        font-size: 2rem;
         color: #FFFFFF;
     }
 
@@ -719,8 +719,8 @@ body {
     }
 
     .nav-links ul.active {
-        clip-path: circle(2200px at 90% -50%);
-        -webkit-clip-path: circle(2200px at 90% -50%);
+        clip-path: circle(200vh at 90% -50%);
+        -webkit-clip-path: circle(200vh at 90% -50%);
         pointer-events: all;
     }
 
