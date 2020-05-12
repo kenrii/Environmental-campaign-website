@@ -67,6 +67,9 @@ body {
     display: none;
     flex-direction: column;
     justify-content: space-between;
+    border: none;
+    background-color: transparent;
+    outline: none;
 }
 
 #toggle {
@@ -427,7 +430,7 @@ body {
     position: relative;
 }
 
-#cell-vinkki {
+.carousel-cell {
   padding: 1em;
   width: 35%;
   height: 11rem;
@@ -443,7 +446,7 @@ body {
   z-index: 5;
 }
 
-#cell-vinkki p {
+.carousel-cell p {
     font-size: 0.65em;
     z-index: 5;
 }
@@ -766,6 +769,9 @@ body {
 
     .toggle-button {
         display: flex;
+        border:none;
+        background-color:transparent;
+        outline:none;
     }
 
     /** Aloitussivu **/
@@ -844,7 +850,7 @@ body {
         background: #E9FFEF;
     }
     
-    #cell-tarinoita img {
+    .carousel-cellt img {
         height: 6em;
         width: 6em;
         margin-top: 5%;
@@ -852,12 +858,12 @@ body {
         padding: 1em;
     }
     
-    #cell-tarinoita p{
+    .carousel-cellt p{
         font-size: 0.85em;
         padding-top: 1em;
     }
     
-    #cell-tarinoita {
+    .carousel-cellt {
         width: 100%;
         height: 20em;
         margin-right: 10px;
@@ -871,7 +877,7 @@ body {
 
     /** Vinkkinurkka **/
 
-    #cell-vinkki {
+    .carousel-cell {
         width: 66%;
     }
 
