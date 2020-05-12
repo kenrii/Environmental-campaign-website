@@ -145,7 +145,7 @@ liity.addEventListener("click", () => {
     smoothScroll("#Liity", 1000)
 })
 
-// Colorbox UKK esiin saamiseen jquerylla.
+// Colorbox UKK esiin saamiseen
 $(document).ready(function(){
     //Examples of how to assign the Colorbox event to elements
     $(".inline").colorbox({inline:true, width:"80%", height:"80%"});

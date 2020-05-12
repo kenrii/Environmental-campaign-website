@@ -289,6 +289,26 @@ body {
     font-weight: bold;
 }
 
+#Artikkelit li a:visited{
+    text-decoration: none;
+}
+
+.popup-tiedote {
+    background-color: #5D8A6A;
+    padding: 3em;
+    font-size: 1em;
+    width: auto;
+}
+
+.popup-tiedote h2 {
+    color: #41F0D5;
+    margin-bottom: 2em;
+}
+
+.popup-tiedote p {
+    color: #F5FFF8;
+}
+
 /** Vaikuta **/
 
 #Vaikuta {
