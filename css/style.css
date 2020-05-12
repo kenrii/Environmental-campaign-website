@@ -705,7 +705,6 @@ body {
         width: 100%;
         flex-direction: column;
         justify-content: center;
-        align-items: left;
         clip-path: circle(0 at 90% -50%);
         -webkit-clip-path: circle(0 at 90% -50%);
         transition: all 1s ease-out;
@@ -865,7 +864,6 @@ body {
         margin-bottom: 10px;
         background: #E9FFEF;
         border-radius: 5px;
-        justify-content: top;
         align-items: center;
         display: flex;
         flex-direction: column;
