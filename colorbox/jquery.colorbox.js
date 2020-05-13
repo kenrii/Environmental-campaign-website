@@ -19,11 +19,11 @@
 		speed: 300,
 		fadeOut: 300,
 		width: false,
-		initialWidth: "600",
+		initialWidth: "320",
 		innerWidth: false,
 		maxWidth: false,
 		height: false,
-		initialHeight: "450",
+		initialHeight: "350",
 		innerHeight: false,
 		maxHeight: false,
 		scalePhotos: true,
@@ -1135,10 +1135,22 @@
 		
 		})(jQuery, this, this.document);
 
+		/*
 		$(document).on('cbox_open',function(){
 			$(document.body).css('position','fixed');
 		  }).on('cbox_closed',function(){
 			$(document.body).css('position','');
 		  });
+		*/
+
+		var position;
+		$(document).on('cbox_open',function(){
+			position = $(document.body).scrollTop();
+			$(document.body).css('overflow','hidden');
+		  }).on('cbox_closed',function(){
+			$(document.body).css('overflow','auto');
+		  });
+		  $(document.body).scrollTop(position);
+		
 		  
 }(jQuery, document, window));
