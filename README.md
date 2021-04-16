@@ -6,4 +6,4 @@ Miten ajaa projekti
 3. Nauti ihanasta verkkosivustosta.
 
 PS. Jos et halua ladata verkkosivua koneellesi, voit kokeilla sivua tästä osoitteesta:\
-https://kenrii.github.io/likainenoljy/
+https://kenrii.github.io/environmental_project_webpage/
